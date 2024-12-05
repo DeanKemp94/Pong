@@ -46,16 +46,18 @@ class Sprite {
         return width;
     }
 
-    public void setWidth(int width) {
+    public int setWidth(int width) {
         this.width = width;
+        return width;
     }
 
     public int getHeight() {
         return height;
     }
 
-    public void setHeight(int height) {
+    public int setHeight(int height) {
         this.height = height;
+        return height;
     }
 
     public Color getColor() {
