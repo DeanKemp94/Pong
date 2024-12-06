@@ -13,52 +13,43 @@ class Sprite {
     public int getXPosition() {
         return xPosition;
     }
-
-    public void setXPosition(int xPosition) {
-        this.xPosition = xPosition;
-    }
-
     public int getYPosition() {
         return yPosition;
     }
-
-    public void setYPosition(int yPosition) {
-        this.yPosition = yPosition;
-    }
-
     public int getXVelocity() {
         return xVelocity;
     }
-
-    public void setXVelocity(int xVelocity) {
-        this.xVelocity = xVelocity;
-    }
-
     public int getYVelocity() {
         return yVelocity;
     }
-
-    public void setYVelocity(int yVelocity) {
-        this.yVelocity = yVelocity;
-    }
-
     public int getWidth() {
         return width;
     }
-
-    public int setWidth(int width) {
-        this.width = width;
-        return width;
-    }
-
     public int getHeight() {
         return height;
     }
-    
     public Color getColor() {
         return color;
     }
 
+    public void setXPosition(int xPosition) {
+        this.xPosition = xPosition;
+    }
+    public void setYPosition(int yPosition) {
+        this.yPosition = yPosition;
+    }
+    public void setXVelocity(int xVelocity) {
+        this.xVelocity = xVelocity;
+    }
+    public void setYVelocity(int yVelocity) {
+        this.yVelocity = yVelocity;
+    }
+    public void setWidth(int width) {
+        this.width = width;
+    }
+    public void setHeight(int height) {
+        this.height = height;
+    }
     public void setColor(Color color) {
         this.color = color;
     }
@@ -75,7 +66,7 @@ class Sprite {
          yPosition = newY;
          if (yPosition < 0) {
              yPosition = 0;
-         } else if (yPosition + width < panelWidth) {
+         } else if (yPosition + width > panelWidth) {
              yPosition = panelWidth - width;
          }
      }

@@ -1,6 +1,7 @@
 package Pong;
 
 import java.awt.*;
+import java.util.Random;
 
 class Ball extends Sprite {
     private final static Color BALL_COLOR = Color.white;
