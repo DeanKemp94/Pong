@@ -54,12 +54,7 @@ class Sprite {
     public int getHeight() {
         return height;
     }
-
-    public int setHeight(int height) {
-        this.height = height;
-        return height;
-    }
-
+    
     public Color getColor() {
         return color;
     }
